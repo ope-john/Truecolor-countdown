@@ -1,0 +1,44 @@
+               <h5>Get Updates!</h5>
+                        <div class="col form-rm-padding">
+                            <form action="">
+                                <div class="input-field inline inherit-width">
+                                    <input id="email_inline" type="email" class="validate">
+                                    <label for="email_inline">Email</label>
+                                </div>
+                                <button class="btn waves-effect waves-light btn-color" type="submit"
+                                    name="action">Submit
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </form>
+                        </div>
+
+                        {{days}} days, {{hours}}hrs : {{minutes}}mins
+
+
+
+####
+COUNTDOWN MOBILE CSS
+.brand-logo{
+    left: 3%;
+}
+
+.my-logo{
+    width: 100px;
+}
+
+main{
+    margin: 0px;
+}
+
+.background-img{
+    display: none;
+}
+
+.text-col-padding{
+    padding: 0px 20px;
+}
+
+h1{
+    font-size: 55px;
+    line-height: 100px;
+}

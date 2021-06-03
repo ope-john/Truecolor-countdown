@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <nav class="animated slideInDown" > 
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><img class="my-logo" src="../static/img/logo-1.png" alt=""></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="nav-content" id="cdTimer" href="#"></a></li>
+                <li><a class="nav-content" href="https://medium.com/the-innovation/introducing-truecolor-a-game-changer-in-pre-employment-assessment-9c2e8bb3c7f4" target="_blank" >Learn More</a></li>
+                <li><a class="nav-content" href="sass.html"><i class="material-icons">share</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="row">
+                <div class="col m6 background-img"></div>
+                <div class="col m6 text-col-padding">
+                    <div class="row headline-margin">
+                        <h1 class="headline">The <br> <span class="keyword-color">smart</span> <br> way to hire and
+                            retain talents.</h1>
+                    </div>
+                <!--   <div class="row launch-margin">
+                        <div>
+                            <h6 id="cdTimer"></h6>
+                        </div>
+                        <img class="launch-img" src="../static/img/launch-img.png" alt="">
+                    </div>-->
+                    <div class="row mobile-timer">
+                        <p id="cdTimerMobile"></p>
+                    </div>
+                    <hr>
+                    <div class="row socials">
+                        <div class="col socials-link">
+                            <a href="https://medium.com/the-innovation/introducing-truecolor-a-game-changer-in-pre-employment-assessment-9c2e8bb3c7f4" target="_blank" class="black-text">Medium</a>
+                            <a href="https://www.linkedin.com/company/truecolor-psychometric/" target="_blank" class="black-text">LinkedIn</a>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+    </main>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Aug 31, 2021 00:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("cdTimer").innerHTML = "Launch in "+ days + "days, " + hours + "hrs "
+      + minutes + "mins";
+
+      document.getElementById("cdTimerMobile").innerHTML = "Launch in "+ days + "days, " + hours + "hrs "
+      + minutes + "mins";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+    
+
+</html>

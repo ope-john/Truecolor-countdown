@@ -1,0 +1,220 @@
+main{
+    margin: 20px 50px;
+    font-family: 'Asap Condensed', sans-serif;
+    margin-right: 0px;
+}
+nav{
+    background-color: white;
+}
+
+.nav-wrapper{
+    margin: 0px 50px
+}
+
+.brand-logo{
+    font-family: 'Asap Condensed', sans-serif;
+    color: #616161 !important;
+    font-size: 40px;
+    height: inherit;
+    display: flex !important;
+    align-items: center;
+}
+
+.background-img{
+    background: url("../img/illustration.svg") no-repeat center center;
+    height: 80%;
+    background-position: center;
+    background-size: contain;
+    -webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+  
+  
+
+.text-col-padding{
+    padding: 0px 50px !important;
+}
+
+h1{
+    font-size: 85px;
+    line-height: 120px;
+}
+
+.headline-margin{
+    margin-bottom: 25px;
+}
+
+.keyword-color{
+    color: #d50000;
+    font-size: 120px;
+}
+
+.form-rm-padding{
+    padding: 0px !important;
+    width: -webkit-fill-available;
+}
+
+.inherit-width{
+    width: -webkit-fill-available;
+}
+
+.btn-color{
+    background-color: black;
+}
+
+.btn-color:hover{
+    background-color: black;
+}
+
+.nav-content{
+    color: black;
+    font-family: 'Asap Condensed', sans-serif;
+
+}
+
+.nav-content:hover{
+    background-color: unset;
+    
+}
+
+.my-logo{
+    width: 130px;
+  }
+
+.socials{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.socials-link a{
+    margin-left: 20px;
+}
+
+.headline{
+    font-weight: 700;
+}
+
+.launch-img{
+    width: 170px;
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+	animation: vibrate-1 0.3s linear infinite both;
+}
+
+@-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+
+.launch-margin{
+    margin-top: 15%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 10px;
+}
+
+.mobile-timer{
+  display: none;
+}
+
+@media only screen and (max-width: 812px) {
+.mobile-timer{
+  display: contents;
+}
+
+.mobile-timer p{
+  text-align: end;
+}
+
+.brand-logo{
+    left: 3% !important;
+}
+
+.my-logo{
+    width: 100px;
+}
+
+main{
+    margin: 0px;
+}
+
+.background-img{
+    display: none;
+}
+
+.text-col-padding{
+    padding: 0px 20px !important;
+}
+
+h1{
+    font-size: 55px;
+    line-height: 90px;
+}
+
+}
